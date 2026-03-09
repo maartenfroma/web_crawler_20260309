@@ -36,9 +36,8 @@ def set_to_file(links, file_name):
         for l in links:
             f.write(l+'\n')
 
-)
-#
-# html=urlopen(req).read()
 
 
-# print(html)
+
+
+
