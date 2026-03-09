@@ -4,6 +4,8 @@ from spider import Spider
 from crawl_functions import *
 from domain import *
 
+#PROJECT VARIABLES
+
 PROJECT_NAME="thesite"
 HOMEPAGE="https://www.wikipedia.org/"
 DOMAIN_NAME=get_domain_name(HOMEPAGE)
@@ -41,4 +43,5 @@ def work():
         queue.task_done()
 
 create_workers()
+
 crawl()
