@@ -20,8 +20,8 @@ def crawl():
     if len(queued_links)>0:
         print(str(len(queued_links)) + " links in the queue")
         create_jobs()
-        queue.join()  #wacht totdat alle jobs klaar zijn
-        crawl()  #Check of er nieuwe links zijn toegevoegd
+        queue.join()  #wait until all jobs are finished
+        crawl()  #Check if new links are added
 
 
 def create_jobs():
@@ -45,3 +45,4 @@ def work():
 create_workers()
 
 crawl()
+
