@@ -4,7 +4,7 @@ def create_project_dir(directory):
         print("Directory created", directory)
         os.mkdir(directory)
 
-create_project_dir("mysite")
+#create_project_dir("mysite")
 
 def create_data_files(project_name, base_url):
     queque=os.path.join(project_name, "queue.txt")
@@ -35,6 +35,7 @@ def set_to_file(links, file_name):
     with open(file_name, 'w') as f:
         for l in links:
             f.write(l+'\n')
+
 
 
 
