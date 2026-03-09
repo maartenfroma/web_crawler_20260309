@@ -36,17 +36,9 @@ def set_to_file(links, file_name):
         for l in links:
             f.write(l+'\n')
 
-
-# from bs4 import BeautifulSoup
-# import requests
-#
-# response = requests.get( "https://www.wikipedia.org/", headers={"User-Agent": "Mozilla/5.0"} )
-# bsobject=BeautifulSoup(response.text, "html.parser")
-# print(bsobject.title)
-#print(response.text)
-# url=urlopen("https://www.wikipedia.org/")
-# req=Request(url, headers={"User-Agent" : "Mozilla/5.0"})
+)
 #
 # html=urlopen(req).read()
+
 
 # print(html)
