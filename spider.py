@@ -83,16 +83,13 @@ class Spider:
 
     @staticmethod
     def add_link_to_queue(links):
-        # Zorg dat links altijd een iterable is
         if not isinstance(links, (list, set, tuple)):
             links = [links]
 
         for url in links:
-            # Skip lege of None URLs
             if not url:
                 continue
 
-            # Domeinfilter
             if Spider.domain_name != get_domain_name(url):
                 continue
 
@@ -100,6 +97,7 @@ class Spider:
             with Spider.lock:
                 if (url not in Spider.queue) and (url not in Spider.crawled):
                     Spider.queue.add(url)
+
 
 
 
