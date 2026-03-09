@@ -31,14 +31,13 @@ class LinkFinder(HTMLParser):
                 if value.startswith('tel:'):
                     continue
 
-                # Maak absolute URL op basis van de pagina, niet de homepage
                 url = parse.urljoin(self.page_url, value)
 
-                # Normaliseer URL (verwijder trailing slash)
                 url = url.rstrip('/')
 
                 self.links.add(url)
 
     def page_links(self):
         return self.links
+
 
